@@ -3,6 +3,7 @@ const mochawesome = require("cypress-mochawesome-reporter/plugin");
 
 module.exports = defineConfig({
   e2e: {
+    baseUrl: "https://app.ninjarmm.com",
     specPattern: [
       "cypress/e2e/**/*.cy.{js,jsx,ts,tsx}", // regular UI tests
       "cypress/api/**/*.cy.{js,jsx,ts,tsx}", // dedicated API tests

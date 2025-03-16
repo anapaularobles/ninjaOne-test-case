@@ -1,8 +1,9 @@
 {
   "scripts": {
     "test:browsers": "npx cypress run --browser chrome && npx cypress run --browser firefox && npx cypress run --browser edge",
-    "test": "cypress run",
-    "report": "npx mochawesome-merge cypress/reports/*.json > merged-report.json && npx marge mochawesome.json --reportDir cypress/reports"
+    "clean:reports": "rimraf cypress/reports",
+    "test": "npm run clean:reports && cypress run",
+    "report": "mochawesome-merge cypress/reports/*.json > mochawesome.json && marge mochawesome.json --reportDir cypress/reports"
   },
   "devDependencies": {
     "axe-core": "^4.10.3",
