@@ -16,7 +16,7 @@ This repository contains end-to-end, API, and accessibility automation tests bui
 
 - Install dependencies: npm install
 
-### Running Tests\*\*
+### Running Tests
 
 - To open cypress: `npx cypress open`
 - To run specific test: `npx cypress run --spec "cypress/e2e/*.cy.js"`
