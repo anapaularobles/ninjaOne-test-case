@@ -18,7 +18,6 @@ describe("Accessibility Tests", () => {
           })
         );
 
-        // Explicitly throw an error (clearly visible in Cypress UI)
         throw new Error(
           `Accessibility violations found:\n${JSON.stringify(
             violationDetails,

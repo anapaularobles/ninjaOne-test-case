@@ -16,7 +16,6 @@ module.exports = defineConfig({
       "cypress/accessibility/**/*.cy.{js,jsx,ts,tsx}", // accessibility tests
     ],
     setupNodeEvents(on, config) {
-      // Register logging task
       on("task", {
         log(message) {
           console.log(message);
@@ -24,7 +23,6 @@ module.exports = defineConfig({
         },
       });
 
-      // Properly setup mochawesome plugin
       mochawesome(on, config);
 
       return config;
