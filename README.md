@@ -20,7 +20,7 @@ This repository contains end-to-end, API, and accessibility automation tests bui
 
 - To open cypress: `npx cypress open`
 - To run specific test: `npx cypress run --spec "cypress/e2e/*.cy.js"`
-- To run and generate the Report: `npm run test && npm run report`
+- To run and generate the Report: `npm run test`
 
 ## Test Reports
 
