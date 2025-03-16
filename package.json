@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "test:browsers": "npx cypress run --browser chrome && npx cypress run --browser firefox && npx cypress run --browser edge",
+    "test": "cypress run",
+    "report": "npx mochawesome-merge cypress/reports/*.json > merged-report.json && npx marge mochawesome.json --reportDir cypress/reports"
+  },
+  "devDependencies": {
+    "axe-core": "^4.10.3",
+    "cypress": "^14.2.0",
+    "cypress-axe": "^1.6.0",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^5.0.0",
+    "mochawesome-report-generator": "^6.2.0",
+    "rimraf": "^6.0.1"
+  }
+}
