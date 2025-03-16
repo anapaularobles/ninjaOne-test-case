@@ -2,7 +2,7 @@
   "scripts": {
     "test:browsers": "npx cypress run --browser chrome && npx cypress run --browser firefox && npx cypress run --browser edge",
     "clean:reports": "rimraf cypress/reports",
-    "test": "npm run clean:reports && cypress run",
+    "test": "npm run clean:reports && cypress run --browser chrome",
     "report": "mochawesome-merge cypress/reports/*.json > mochawesome.json && marge mochawesome.json --reportDir cypress/reports"
   },
   "devDependencies": {
